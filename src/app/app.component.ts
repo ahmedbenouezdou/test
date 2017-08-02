@@ -2,8 +2,8 @@ import { Component }          from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<router-outlet></router-outlet>`,
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.template.html',
+  styleUrls: ['./cooptation/css/bootstrap.min.css', './cooptation/css/gsdk-bootstrap-wizard.css' ]
 })
 export class AppComponent {
 

@@ -10,7 +10,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './memoryData/in-memory-data.service';
 
 import { AppComponent }         from './app.component';
-import { CooptationComponent }  from './cooptation/cooptation.component';
+import { ProfilComponent }  from './profil/profil.component';
 
 @NgModule({
   imports: [
@@ -22,7 +22,7 @@ import { CooptationComponent }  from './cooptation/cooptation.component';
   ],
   declarations: [
     AppComponent,
-    CooptationComponent
+    ProfilComponent
   ],
   bootstrap: [ AppComponent ]
 })

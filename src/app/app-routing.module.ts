@@ -2,11 +2,11 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-import { CooptationComponent }  from './cooptation/cooptation.component';
+import { ProfilComponent }  from './profil/profil.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/cooptation', pathMatch: 'full' },
-  { path: 'cooptation',     component: CooptationComponent }
+  { path: '', redirectTo: '/profil', pathMatch: 'full' },
+  { path: 'profil',     component: ProfilComponent }
 ];
 
 @NgModule({
