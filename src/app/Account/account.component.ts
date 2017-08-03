@@ -4,15 +4,14 @@ import { Router }            from '@angular/router';
 
 
 @Component({
-    selector: 'my-profil',
-    templateUrl: './profil.template.html',
+    selector: 'my-account',
+    templateUrl: './account.template.html',
     styleUrls: [ ]
 })
-export class ProfilComponent {
+export class AccountComponent {
 
 
     constructor() { }
-
 
 
 }

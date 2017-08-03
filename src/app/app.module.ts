@@ -11,6 +11,7 @@ import { InMemoryDataService }  from './memoryData/in-memory-data.service';
 
 import { AppComponent }         from './app.component';
 import { ProfilComponent }  from './profil/profil.component';
+import { AccountComponent }  from './account/account.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { ProfilComponent }  from './profil/profil.component';
   ],
   declarations: [
     AppComponent,
-    ProfilComponent
+    ProfilComponent,
+    AccountComponent
   ],
   bootstrap: [ AppComponent ]
 })

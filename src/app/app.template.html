@@ -1,3 +1,9 @@
+<style>
+
+    .active-link{
+        background-color: #ED8D00
+    }
+</style>
 <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
 
@@ -19,8 +25,8 @@
                     <div class="wizard-navigation">
                         <div class="wizard-navigation">
                             <ul class="nav nav-pills">
-                                <li style="width: 25%;" class="active"><a [routerLink]="['/profil']" >About</a></li>
-                                <li style="width: 25%;"><a >Account</a></li>
+                                <li style="width: 25%;" class="active"><a [routerLink]="['/profil']" routerLinkActive="active-link">About</a></li>
+                                <li style="width: 25%;"><a [routerLink]="['/account']" [routerLinkActive]="['active-link']">Account</a></li>
                                 <li style="width: 25%;"><a >Address</a></li>
                                 <li style="width: 25%;"><a >Address</a></li>
                             </ul>
@@ -35,10 +41,10 @@
                     </div>
                     <div class="wizard-footer height-wizard">
                         <div class="pull-right">
-                            <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next'
-                                   value='Next'/>
-                            <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish'
-                                   value='Finish'/>
+
+                            <button class='btn btn-next btn-fill btn-warning btn-wd btn-sm' (click)="goBack()">Next</button>
+                            <button class='btn btn-next btn-fill btn-warning btn-wd btn-sm' (click)="finish()">Finish</button>
+
 
                         </div>
 
