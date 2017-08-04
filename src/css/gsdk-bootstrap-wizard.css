@@ -363,8 +363,8 @@ h1 .subtitle {
 .wizard-card .choice .icon {
   text-align: center;
   vertical-align: middle;
-  height: 116px;
-  width: 116px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   background-color: #999999;
   color: #FFFFFF;
@@ -374,8 +374,8 @@ h1 .subtitle {
   -webkit-transition: all 0.2s;
 }
 .wizard-card .choice i {
-  font-size: 30px;
-  line-height: 111px;
+  font-size: 15px;
+  line-height: 70px;
 }
 .wizard-card .choice:hover .icon, .wizard-card .choice.active .icon {
   border-color: #2ca8ff;

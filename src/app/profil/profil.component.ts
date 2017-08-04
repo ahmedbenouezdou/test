@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router }            from '@angular/router';
 
+import { Candida }        from '../candida/candida';
 
 
 @Component({
@@ -8,11 +9,20 @@ import { Router }            from '@angular/router';
     templateUrl: './profil.template.html',
     styleUrls: [ ]
 })
-export class ProfilComponent {
+export class ProfilComponent{
+
+    candida:Candida;
+
+    constructor(private router: Router) { }
 
 
-    constructor() { }
+    save(): void {
 
+    }
 
-
+    goBack(): void {
+        console.log(this.candida);
+        let link = ['/account'];
+        this.router.navigate(link);
+    }
 }

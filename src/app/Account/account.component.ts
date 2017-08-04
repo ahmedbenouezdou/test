@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component }        from '@angular/core';
 import { Router }            from '@angular/router';
 
 
@@ -11,7 +11,11 @@ import { Router }            from '@angular/router';
 export class AccountComponent {
 
 
-    constructor() { }
+    constructor(private router: Router) { }
 
 
+    previous(): void {
+    let link = ['/profil'];
+    this.router.navigate(link)
+    }
 }
