@@ -1,68 +1,73 @@
-<style>
+<div class="image-container set-full-height" style="background-image: url(img/wizard.jpg); height: auto;">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
 
-    .active-link{
-        background-color: #ED8D00
-    }
-</style>
-<div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+            <!--      Wizard container        -->
+            <div class="wizard-container">
 
-        <!--      Wizard container        -->
-        <div class="wizard-container">
+                <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                    <form action="" method="">
+                        <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
 
-            <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                <form action="" method="">
-                    <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+                        <div class="wizard-header">
+                            <h3 style="margin-top: 7px;">
+                                <img class="normal"
+                                     src="http://beezen.fr/wp-content/uploads/2016/11/Logo-Beezen-208x50-1.png"
+                                     alt="Logo"
+                                     style="width: 246px;  vertical-align:none;">
+                            </h3>
+                        </div>
 
-                    <div class="wizard-header">
-                        <h3 style="margin-top: 7px;">
-                            <img class="normal"
-                                 src="http://beezen.fr/wp-content/uploads/2016/11/Logo-Beezen-208x50-1.png" alt="Logo"
-                                 style="width: 246px;  vertical-align:none;">
-                        </h3>
-                    </div>
-
-                    <div class="wizard-navigation">
                         <div class="wizard-navigation">
-                            <ul class="nav nav-pills">
-                                <li style="width: 25%;" class="active"><a [routerLink]="['/profil']" routerLinkActive="active-link">About</a></li>
-                                <li style="width: 25%;"><a [routerLink]="['/account']" [routerLinkActive]="['active-link']">Account</a></li>
-                                <li style="width: 25%;"><a >Address</a></li>
-                                <li style="width: 25%;"><a >Address</a></li>
-                            </ul>
+                            <div class="wizard-navigation">
+                                <ul class="nav nav-pills">
+                                    <li style="width: 25%;" class="active"><a [routerLink]="['/profil']"
+                                                                              routerLinkActive="active-link">About</a>
+                                    </li>
+                                    <li style="width: 25%;"><a [routerLink]="['/account']"
+                                                               [routerLinkActive]="['active-link']">Account</a></li>
+                                    <li style="width: 25%;"><a>Address</a></li>
+                                    <li style="width: 25%;"><a>Address</a></li>
+                                </ul>
+
+                            </div>
 
                         </div>
 
-                    </div>
+
+                        <div class="tab-content">
+                            <router-outlet></router-outlet>
+                        </div>
+                        <div class="wizard-footer height-wizard">
+                            <div class="pull-right">
+
+                                <button class='btn btn-next btn-fill btn-warning btn-wd btn-sm' (click)="goBack()">
+                                    Next
+                                </button>
+                                <button class='btn btn-next btn-fill btn-warning btn-wd btn-sm' (click)="finish()">
+                                    Finish
+                                </button>
 
 
-                    <div class="tab-content">
-                        <router-outlet></router-outlet>
-                    </div>
-                    <div class="wizard-footer height-wizard">
-                        <div class="pull-right">
+                            </div>
 
-                            <button class='btn btn-next btn-fill btn-warning btn-wd btn-sm' (click)="goBack()">Next</button>
-                            <button class='btn btn-next btn-fill btn-warning btn-wd btn-sm' (click)="finish()">Finish</button>
-
-
+                            <div class="pull-left">
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm'
+                                       name='previous' value='Previous'/>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
 
-                        <div class="pull-left">
-                            <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm'
-                                   name='previous' value='Previous'/>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                </form>
+                    </form>
+                </div>
             </div>
+            <!-- wizard container -->
         </div>
-        <!-- wizard container -->
     </div>
 </div>
+</div>
 
-<script src="cooptation/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-<script src="cooptation/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="cooptation/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-<script src="cooptation/js/jquery.validate.min.js"></script>
+<script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
