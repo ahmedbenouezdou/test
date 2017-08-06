@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
-import { Router }            from '@angular/router';
+import { Router } from '@angular/router';
 
-import { Candida }        from '../candida/candida';
+import { Candida } from '../candida/candida';
 
 
 @Component({
     selector: 'my-profil',
     templateUrl: './profil.template.html',
-    styleUrls: [ ]
+    styleUrls: []
 })
-export class ProfilComponent{
+export class ProfilComponent {
 
-    candida:Candida;
+    candida: Candida;
 
     constructor(private router: Router) { }
 
@@ -26,3 +26,4 @@ export class ProfilComponent{
         this.router.navigate(link);
     }
 }
+

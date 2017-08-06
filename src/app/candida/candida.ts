@@ -6,3 +6,5 @@ export class Candida {
     lastName: string;
     emial: string;
 }
+
+
