@@ -1,54 +1,14 @@
 <h4 class="info-text"> What are you doing? (checkboxes) </h4>
 <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-        <div class="col-sm-3">
-            <div class="choice" data-toggle="wizard-checkbox">
-                <input type="checkbox" name="jobb" value="Design">
+        <div class="col-sm-3" *ngFor="let item of competence">
+            <div class="choice" data-toggle="wizard-checkbox"  >
+                <input type="checkbox" name="jobb" value="Design" >
 
                 <div class="icon">
-                    <i>Java</i>
+                    <i>{{item}}</i>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="choice" data-toggle="wizard-checkbox">
-                <input type="checkbox" name="jobb" value="Code">
-
-                <div class="icon">
-                    <i>Java/JEE</i>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-sm-3">
-            <div class="choice" data-toggle="wizard-checkbox">
-                <input type="checkbox" name="jobb" value="Develop">
-
-                <div class="icon">
-                    <i>AngularJS</i>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-sm-3">
-            <div class="choice" data-toggle="wizard-checkbox">
-                <input type="checkbox" name="jobb" value="Develop">
-
-                <div class="icon">
-                    <i>Angular</i>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-sm-3">
-            <div class="choice" data-toggle="wizard-checkbox">
-                <input type="checkbox" name="jobb" value="Develop">
-
-                <div class="icon">
-                    <i>NodeJs</i>
-                </div>
-            </div>
-
         </div>
     </div>
 

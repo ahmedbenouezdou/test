@@ -11,11 +11,18 @@ import { Router }            from '@angular/router';
 export class AccountComponent {
 
 
-    constructor(private router: Router) { }
+    competence: any[];
+
+    constructor(private router: Router) { 
+    }
 
 
     previous(): void {
     let link = ['/profil'];
-    this.router.navigate(link)
+    this.router.navigate(link);
+    }
+
+    ngOnInit() {
+    this.competence=['java','NodeJs','angular','angularJs','Spring','MyBatis','Hibernate'];
     }
 }
